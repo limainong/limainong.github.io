@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-28T15:01:17.892Z</updated>
+    <updated>2020-02-28T18:31:13.790Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 理想国</rights>
     <entry>
         <title type="html"><![CDATA[Markdown 语法使用整理]]></title>
-        <id>https://limainong.github.io/post/one/</id>
-        <link href="https://limainong.github.io/post/one/">
+        <id>https://limainong.github.io/post/markdown/</id>
+        <link href="https://limainong.github.io/post/markdown/">
         </link>
         <updated>2020-02-28T14:34:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
@@ -22,8 +22,201 @@
         <content type="html"><![CDATA[<p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
 <p>这里收集了Markdown的所有常用语法。</p>
 <!-- more -->
-<p>小站已经建起，文字等待填充。</p>
-<p>房间还在打扫，神在门口无法进来。</p>
+<h1 id="前言">前言</h1>
+<p>Markdown 是一种轻量级的 标记语言，语法简洁明了、学习容易，还具有其他很多优点，目前被越来越多的人用来写作使用。</p>
+<p>Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+<p>由于一些扩展只在特定的环境中才能实现，所以这里介绍的是通用的常用语法说明。</p>
+<h1 id="语法">语法</h1>
+<p>下面就是常用的Markdown语法内容，以标准Markdown语法为依据，可能这里有一些差异，请以语法为准。</p>
+<h2 id="标题">标题</h2>
+<p>标题分为6级，对应HTML标签的h1~h6。#越多，字体越小。</p>
+<pre><code># H1标题
+## H2标题
+### H3标题
+#### H4标题
+##### H5标题
+###### H6标题
+</code></pre>
+<h2 id="分隔符">分隔符</h2>
+<p>分隔符就是一条横线。</p>
+<pre><code>---
+</code></pre>
+<h2 id="文本样式">文本样式</h2>
+<table>
+<thead>
+<tr>
+<th>斜体</th>
+<th>加粗</th>
+<th>斜体加粗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*斜体文本*</code></td>
+<td><code>**加粗**</code></td>
+<td><code>***斜体加粗***</code></td>
+</tr>
+</tbody>
+</table>
+<p>删除线<br>
+文字有一条删除线的效果</p>
+<pre><code>~~ 删除效果 ~~
+</code></pre>
+<p>高亮<br>
+文字用醒目的高亮显示</p>
+<pre><code>这是` 高亮文本 `效果。
+</code></pre>
+<p><code>高亮文本</code></p>
+<p>代码块<br>
+代码块就是将源码直接进行展示，可在开始的** ``` **后面加上代码语种名称。</p>
+<p><code>` javascript var str = &quot;hello world!&quot;; alert(str);</code> `<br>
+为了显示，上面给出的```加了一个空格。</p>
+<p>var str = &quot;hello world!&quot;;<br>
+alert(str);<br>
+上面就是效果</p>
+<p>图片<br>
+图片展示</p>
+<p>方式1：<br>
+<img src="https://help.github.com/assets/images/site/favicon.ico" alt="文本内容" title="logo" loading="lazy"><br>
+方式2：<br>
+![文本内容][img]<br>
+[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;<br>
+方式1：<br>
+文本内容</p>
+<p>方式2：<br>
+![文本内容][img]<br>
+[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;</p>
+<h6 id="url-more">说明：</h6>
+<p>URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有鼠标hover提示文本效果。</p>
+<p>推荐使用方式2，当一个链接在文中多次出现的时候，就会体现出其优点了。</p>
+<p>另外，后面的提示文本除了使用 &quot;提示文本&quot; 外，还可以是 '提示文本' 和 (提示文本) 。</p>
+<p>链接<br>
+链接根据链接目标可分为站内站外链接，按照类型可分为文本链接和图片链接。<br>
+综上所述，可分为以下三种：</p>
+<p>文本链接<br>
+给文本信息添加超链接</p>
+<p>1.<a href="https://github.com/SeayXu">https://github.com/SeayXu</a><br>
+2.<a href="https://github.com/SeayXu" title="SeayXu">文本链接</a><br>
+3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
+<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;<br>
+1.https://github.com/SeayXu<br>
+2.文本链接<br>
+3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
+<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;</p>
+<p>链接URL相关说明和图片一样，请查看</p>
+<p>特例：<br>
+当链接的文本内容和链接Id相同的时候，可以不用写链接后面的Id。</p>
+<p>[SeayXu][]<br>
+[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;<br>
+[SeayXu][]<br>
+[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;</p>
+<p>图片链接<br>
+给图片加上超链接</p>
+<p>方式1：<br>
+<a href="https://github.com/SeayXu" title="SeayXu"><img src="https://help.github.com/assets/images/site/favicon.ico" alt="Github" title="Seay" loading="lazy"></a><br>
+方式2：<br>
+[![Github][img-url]][link-url]<br>
+[link-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
+[img-url]:https://help.github.com/assets/images/site/favicon.ico &quot;Seay&quot;<br>
+方式1：</p>
+<p>Github</p>
+<p>方式2：<br>
+![Github][github-img]<br>
+提示：由于各个Markdown解析不同，所以显示的提示文本有可能也不太一样。</p>
+<p>锚点<br>
+锚点其实与文本链接和图片链接用法是一样的，只不过是在本页面内，需要稍微改动下。</p>
+<p>设置锚点链接目标：</p>
+<h6 id="url-more">说明：</h6>
+添加锚点：
+<p><a href="#url-more" title="anchor alt text">锚点</a><br>
+[锚点][anchor]<br>
+[anchor]:#url-more &quot;anchor alt text&quot;<br>
+锚点<br>
+[锚点][anchor]<br>
+[anchor]:#url-more &quot;anchor alt text&quot;</p>
+<p>说明：相对于文本链接和图片链接，主要是添加了锚点链接目标这一操作，使用语法跟文本链接和图片链接一样。</p>
+<p>列表<br>
+列表分为有序和无序两种。</p>
+<p>无序列表<br>
+无序列表有三种表示方法：* 、 + 和 -。</p>
+<p>下级在上级基础上前面多加两个空格，符号与内容直接有一个空格。</p>
+<p>无序列表1：</p>
+<ul>
+<li>一级条目1</li>
+<li>一级条目2
+<ul>
+<li>二级条目1</li>
+<li>二级条目2
+<ul>
+<li>三级条目1</li>
+<li>三级条目2</li>
+<li>三级条目3</li>
+</ul>
+</li>
+<li>二级条目3</li>
+</ul>
+</li>
+<li>一级条目3<br>
+一级条目1<br>
+一级条目2<br>
+二级条目1<br>
+二级条目2<br>
+三级条目1<br>
+三级条目2<br>
+三级条目3<br>
+二级条目3<br>
+一级条目3<br>
+在这里只演示一种，另外两种就是把 * 分别换成 + 和 - 。</li>
+</ul>
+<p>有序列表<br>
+有序列表与无序列表类似，只不是是将前面的符号换成数字而已。</p>
+<ol>
+<li>一级条目1</li>
+<li>一级条目2</li>
+<li>二级条目1</li>
+</ol>
+<ul>
+<li>二级条目2
+<ul>
+<li>三级条目1</li>
+</ul>
+<ul>
+<li>三级条目2</li>
+</ul>
+<ul>
+<li>三级条目3</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>二级条目3</li>
+</ul>
+<ol start="2">
+<li>一级条目3<br>
+一级条目1<br>
+一级条目2<br>
+二级条目1<br>
+二级条目2<br>
+三级条目1<br>
+三级条目2<br>
+三级条目3<br>
+二级条目3<br>
+一级条目3<br>
+说明：</li>
+</ol>
+<p>有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
+有序列表可结合无序列表，只在第一个条目输入序号后，同级条目会自动编号。<br>
+引用<br>
+引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。</p>
+<blockquote>
+<p>这是一段包含<strong>加粗</strong>的 <em>斜体</em> 和 <em><strong>斜粗体</strong></em> 并带有<code>高亮</code>显示的一段文本来自<a href="https://github.com/SeayXu" title="SeayXu">我的Github</a>。<br>
+我是图片：<br>
+![github logo][github-img]<br>
+[github-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
+这是一段包含加粗的 斜体 和 斜粗体 并带有高亮显示的一段文本来自我的Github。<br>
+我是图片：<br>
+github logo</p>
+</blockquote>
 ]]></content>
     </entry>
     <entry>
@@ -32,11 +225,9 @@
         <link href="https://limainong.github.io/post/hello-gridea/">
         </link>
         <updated>2020-02-28T14:32:20.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+        <summary type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+        <content type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
 <!-- more -->
 <center>
 <table>
@@ -56,7 +247,7 @@
 </tbody>
 </table>
 </center>
-<h1 id="搭建教程">搭建教程👇</h1>
+<h1 id="搭建教程">📖 搭建教程</h1>
 <p>你好，欢迎开始愉快的 Gridea 之旅～</p>
 <h2 id="安装">安装</h2>
 <p>⏬下载并安装 <a href="https://github.com/getgridea/gridea/releases">Gridea</a></p>
