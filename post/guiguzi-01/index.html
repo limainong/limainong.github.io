@@ -1,22 +1,547 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://limainong.github.io</id>
-    <title>理想国</title>
-    <updated>2020-02-28T19:07:48.771Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://limainong.github.io"/>
-    <link rel="self" href="https://limainong.github.io/atom.xml"/>
-    <subtitle>一个理想者的理想国。</subtitle>
-    <logo>https://limainong.github.io/images/avatar.png</logo>
-    <icon>https://limainong.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 理想国</rights>
-    <entry>
-        <title type="html"><![CDATA[鬼谷子]]></title>
-        <id>https://limainong.github.io/post/guiguzi-01/</id>
-        <link href="https://limainong.github.io/post/guiguzi-01/">
-        </link>
-        <updated>2020-02-28T18:51:13.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="捭阖">捭阖</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="一个理想者的博客。">
+<meta name="description" content="一个理想者的理想国。">
+<meta name="theme-color" content="#000">
+<title>鬼谷子 | 理想国</title>
+<link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1582916853219">
+<link rel="stylesheet" href="https://limainong.github.io/styles/main.css">
+
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <meta name="description" content="鬼谷子" />
+    <meta name="keywords" content="经典书籍,鬼谷子" />
+  </head>
+  <body>
+    <div class="head-top-line"></div>
+    <div class="header-box">
+      
+<div class=" gemini">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>理想国</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">一个理想者的理想国。</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            <li class="nav-item ">
+              
+                <a href="/">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/archives">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/tags">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            <li class="nav-item ">
+              
+                <a href="/post/about">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          <li class="nav-item">
+            <a>
+              <i class="fa fa-search"></i> 搜索
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+    </div>
+    <div class="main-continer">
+      
+      <div class="section-layout gemini ">
+        <div class="section-layout-wrapper">
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="https://limainong.github.io/images/avatar.png"/>
+    <p class="site-author-name">理想国</p>
+    <p class="site-description right-motion">👨‍💻疯狂打码中...</p>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://limainong.github.io">
+              <i class="fa fa-github-alt"></i> GitHub
+            </a>
+          
+            <a href="https://limainong.github.io/post/about/">
+              <i class="fa fa-wechat"></i> WeChat
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+  <div class="sidebar-item right-motion sidebar-item-friends">
+    <p class="friends-title"><i class="fa fa-globe"></i> 友情链接</p>
+    <div class="friends-box">
+      
+        <p>
+          <a href="http://nav.92id.com">【🧭网址导航】</a>
+        </p>
+      
+    </div>
+  </div>
+
+</div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%8D%AD%E9%98%96">捭阖</a></li>
+<li><a href="#%E5%8F%8D%E5%BA%94">反应</a></li>
+<li><a href="#%E5%86%85%E6%A5%97">内楗</a></li>
+<li><a href="#%E6%8A%B5%E5%B7%87">抵巇</a></li>
+<li><a href="#%E9%A3%9E%E7%AE%9D">飞箝</a></li>
+<li><a href="#%E5%BF%A4%E5%90%88">忤合</a></li>
+<li><a href="#%E6%8F%A3%E7%AF%87">揣篇</a></li>
+<li><a href="#%E6%91%A9%E7%AF%87">摩篇</a></li>
+<li><a href="#%E6%9D%83%E7%AF%87">权篇</a></li>
+<li><a href="#%E8%B0%8B%E7%AF%87">谋篇</a></li>
+<li><a href="#%E5%86%B3%E7%AF%87">决篇</a></li>
+<li><a href="#%E7%AC%A6%E8%A8%80">符言</a></li>
+<li><a href="#%E6%9C%AC%E7%BB%8F%E9%98%B4%E7%AC%A6%E4%B8%83%E6%9C%AF">本经阴符七术</a>
+<ul>
+<li><a href="#%E7%9B%9B%E7%A5%9E%E6%B3%95%E4%BA%94%E9%BE%99">盛神法五龙</a></li>
+<li><a href="#%E5%85%BB%E5%BF%97%E6%B3%95%E7%81%B5%E9%BE%9F">养志法灵龟</a></li>
+<li><a href="#%E5%AE%9E%E6%84%8F%E6%B3%95%E8%85%BE%E8%9B%87">实意法腾蛇</a></li>
+<li><a href="#%E5%88%86%E5%A8%81%E6%B3%95%E4%BC%8F%E7%86%8A">分威法伏熊</a></li>
+<li><a href="#%E6%95%A3%E5%8A%BF%E6%B3%95%E9%B8%B7%E9%B8%9F">散势法鸷鸟</a></li>
+<li><a href="#%E8%BD%AC%E5%9C%86%E6%B3%95%E7%8C%9B%E5%85%BD">转圆法猛兽</a></li>
+<li><a href="#%E6%8D%9F%E6%82%A6%E6%B3%95%E7%81%B5%E8%93%8D">损悦法灵蓍</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8C%81%E6%9E%A2">持枢</a></li>
+<li><a href="#%E4%B8%AD%E7%BB%8F">中经</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <div class="article-box">
+    <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://limainong.github.io/post/guiguzi-01/">
+      鬼谷子
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-02-29</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://limainong.github.io/tag/HKMpJO7jV/">
+              <span>经典书籍</span>
+            </a>、
+          
+        
+          
+            <a href="https://limainong.github.io/tag/XjBU90ugB2/">
+              <span>鬼谷子</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>27分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>7946<span class="pc-show">字数</span></span>
+    </span>
+  </div>
+</header>
+</div>
+              <div class="post-body next-md-body" id="post_body">
+                <h2 id="捭阖">捭阖</h2>
 <p>粤若稽古，圣人之在天地间也，为众生之先。观阴阳之开阖以名命物，知存亡之门户，筹策万类之终始，达人心之理，见变化之朕焉，而守司其门户。故圣人之在天下也，自古及今，其道一也。变化无穷，各有所归。或阴或阳，或柔或刚，或开或闭，或弛或张。</p>
 <p>是故圣人一守司其门户，审察其所先后，度权量能，校其伎巧短长。夫贤、不肖、智、愚、勇、怯，有差，乃可捭，乃可阖；乃可进，乃可退；乃可贱，乃可贵：无为以牧之。审定有无与其实虚，随其嗜欲以见其志意，微排其所言，而捭反之，以求其实，实得其指，阖而捭之，以求其利。或开而示之，或阖而闭之。开而示之者，同其情也；阖而闭之者，异其诚也。可与不可，明审其计谋，以原其同异。离合有守，先从其志。</p>
 <p>即欲捭之贵周，即欲阖之贵密。周密之贵微，而与道相追。捭之者，料其情也；阖之者，结其诚也。皆见其权衡轻重，乃为之度数，圣人因而为之虑。其不中权衡度数，圣人因而自为之虑。故捭者，或捭而出之，或捭而纳之；阖者，或阖而取之，或阖而去之。捭阖者，天地之道。捭阖者，以变动阴阳，四时开闭，以化万物。纵横、反出、反覆、反忤必由此矣。</p>
@@ -116,268 +641,206 @@
 <p>“却语”者，察伺短也。故言多必有数短之外，议其短验之。动以忌讳，示以时禁，其人因以怀惧，然后结以安其心，收语尽藏而却之，无见己之所不能于多方之人。</p>
 <p>“摄心”者，谓逢好学伎术者，则为之称远方验之，敬以奇怪，人系其心于已。效之于人，验去乱其前，吾归于诚已。遭淫色酒者，为之术音乐动之，以为必死，生日少之忧。喜以自所不见之事，终可以观漫澜之命，使有后会。</p>
 <p>“守义”者，谓守以人义。探心在内以合也。探心深得其主也。从外制内，事有系由而随也。故小人比人则左道，而用之至能败家辱国。非贤智，不能守家以义，不能守国以道，圣人所贵道微妙者，诚以其可以转危为安，救亡使存也。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown 语法使用整理]]></title>
-        <id>https://limainong.github.io/post/markdown/</id>
-        <link href="https://limainong.github.io/post/markdown/">
-        </link>
-        <updated>2020-02-28T14:34:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
-<p>这里收集了Markdown的所有常用语法。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
-<p>这里收集了Markdown的所有常用语法。</p>
-<!-- more -->
-<h1 id="前言">前言</h1>
-<p>Markdown 是一种轻量级的 标记语言，语法简洁明了、学习容易，还具有其他很多优点，目前被越来越多的人用来写作使用。</p>
-<p>Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
-<p>由于一些扩展只在特定的环境中才能实现，所以这里介绍的是通用的常用语法说明。</p>
-<h1 id="语法">语法</h1>
-<p>下面就是常用的Markdown语法内容，以标准Markdown语法为依据，可能这里有一些差异，请以语法为准。</p>
-<h2 id="标题">标题</h2>
-<p>标题分为6级，对应HTML标签的h1~h6。#越多，字体越小。</p>
-<pre><code># H1标题
-## H2标题
-### H3标题
-#### H4标题
-##### H5标题
-###### H6标题
-</code></pre>
-<h2 id="分隔符">分隔符</h2>
-<p>分隔符就是一条横线。</p>
-<pre><code>---
-</code></pre>
-<h2 id="文本样式">文本样式</h2>
-<table>
-<thead>
-<tr>
-<th>斜体</th>
-<th>加粗</th>
-<th>斜体加粗</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>*斜体文本*</code></td>
-<td><code>**加粗**</code></td>
-<td><code>***斜体加粗***</code></td>
-</tr>
-</tbody>
-</table>
-<p>删除线<br>
-文字有一条删除线的效果</p>
-<pre><code>~~ 删除效果 ~~
-</code></pre>
-<p>高亮<br>
-文字用醒目的高亮显示</p>
-<pre><code>这是` 高亮文本 `效果。
-</code></pre>
-<p><code>高亮文本</code></p>
-<p>代码块<br>
-代码块就是将源码直接进行展示，可在开始的** ``` **后面加上代码语种名称。</p>
-<p><code>` javascript var str = &quot;hello world!&quot;; alert(str);</code> `<br>
-为了显示，上面给出的```加了一个空格。</p>
-<p>var str = &quot;hello world!&quot;;<br>
-alert(str);<br>
-上面就是效果</p>
-<p>图片<br>
-图片展示</p>
-<p>方式1：<br>
-<img src="https://help.github.com/assets/images/site/favicon.ico" alt="文本内容" title="logo" loading="lazy"><br>
-方式2：<br>
-![文本内容][img]<br>
-[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;<br>
-方式1：<br>
-文本内容</p>
-<p>方式2：<br>
-![文本内容][img]<br>
-[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;</p>
-<h6 id="url-more">说明：</h6>
-<p>URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有鼠标hover提示文本效果。</p>
-<p>推荐使用方式2，当一个链接在文中多次出现的时候，就会体现出其优点了。</p>
-<p>另外，后面的提示文本除了使用 &quot;提示文本&quot; 外，还可以是 '提示文本' 和 (提示文本) 。</p>
-<p>链接<br>
-链接根据链接目标可分为站内站外链接，按照类型可分为文本链接和图片链接。<br>
-综上所述，可分为以下三种：</p>
-<p>文本链接<br>
-给文本信息添加超链接</p>
-<p>1.<a href="https://github.com/SeayXu">https://github.com/SeayXu</a><br>
-2.<a href="https://github.com/SeayXu" title="SeayXu">文本链接</a><br>
-3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
-<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-1.https://github.com/SeayXu<br>
-2.文本链接<br>
-3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
-<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;</p>
-<p>链接URL相关说明和图片一样，请查看</p>
-<p>特例：<br>
-当链接的文本内容和链接Id相同的时候，可以不用写链接后面的Id。</p>
-<p>[SeayXu][]<br>
-[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;<br>
-[SeayXu][]<br>
-[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;</p>
-<p>图片链接<br>
-给图片加上超链接</p>
-<p>方式1：<br>
-<a href="https://github.com/SeayXu" title="SeayXu"><img src="https://help.github.com/assets/images/site/favicon.ico" alt="Github" title="Seay" loading="lazy"></a><br>
-方式2：<br>
-[![Github][img-url]][link-url]<br>
-[link-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-[img-url]:https://help.github.com/assets/images/site/favicon.ico &quot;Seay&quot;<br>
-方式1：</p>
-<p>Github</p>
-<p>方式2：<br>
-![Github][github-img]<br>
-提示：由于各个Markdown解析不同，所以显示的提示文本有可能也不太一样。</p>
-<p>锚点<br>
-锚点其实与文本链接和图片链接用法是一样的，只不过是在本页面内，需要稍微改动下。</p>
-<p>设置锚点链接目标：</p>
-<h6 id="url-more">说明：</h6>
-添加锚点：
-<p><a href="#url-more" title="anchor alt text">锚点</a><br>
-[锚点][anchor]<br>
-[anchor]:#url-more &quot;anchor alt text&quot;<br>
-锚点<br>
-[锚点][anchor]<br>
-[anchor]:#url-more &quot;anchor alt text&quot;</p>
-<p>说明：相对于文本链接和图片链接，主要是添加了锚点链接目标这一操作，使用语法跟文本链接和图片链接一样。</p>
-<p>列表<br>
-列表分为有序和无序两种。</p>
-<p>无序列表<br>
-无序列表有三种表示方法：* 、 + 和 -。</p>
-<p>下级在上级基础上前面多加两个空格，符号与内容直接有一个空格。</p>
-<p>无序列表1：</p>
-<ul>
-<li>一级条目1</li>
-<li>一级条目2
-<ul>
-<li>二级条目1</li>
-<li>二级条目2
-<ul>
-<li>三级条目1</li>
-<li>三级条目2</li>
-<li>三级条目3</li>
-</ul>
-</li>
-<li>二级条目3</li>
-</ul>
-</li>
-<li>一级条目3<br>
-一级条目1<br>
-一级条目2<br>
-二级条目1<br>
-二级条目2<br>
-三级条目1<br>
-三级条目2<br>
-三级条目3<br>
-二级条目3<br>
-一级条目3<br>
-在这里只演示一种，另外两种就是把 * 分别换成 + 和 - 。</li>
-</ul>
-<p>有序列表<br>
-有序列表与无序列表类似，只不是是将前面的符号换成数字而已。</p>
-<ol>
-<li>一级条目1</li>
-<li>一级条目2</li>
-<li>二级条目1</li>
-</ol>
-<ul>
-<li>二级条目2
-<ul>
-<li>三级条目1</li>
-</ul>
-<ul>
-<li>三级条目2</li>
-</ul>
-<ul>
-<li>三级条目3</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>二级条目3</li>
-</ul>
-<ol start="2">
-<li>一级条目3<br>
-一级条目1<br>
-一级条目2<br>
-二级条目1<br>
-二级条目2<br>
-三级条目1<br>
-三级条目2<br>
-三级条目3<br>
-二级条目3<br>
-一级条目3<br>
-说明：</li>
-</ol>
-<p>有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
-有序列表可结合无序列表，只在第一个条目输入序号后，同级条目会自动编号。<br>
-引用<br>
-引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。</p>
-<blockquote>
-<p>这是一段包含<strong>加粗</strong>的 <em>斜体</em> 和 <em><strong>斜粗体</strong></em> 并带有<code>高亮</code>显示的一段文本来自<a href="https://github.com/SeayXu" title="SeayXu">我的Github</a>。<br>
-我是图片：<br>
-![github logo][github-img]<br>
-[github-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-这是一段包含加粗的 斜体 和 斜粗体 并带有高亮显示的一段文本来自我的Github。<br>
-我是图片：<br>
-github logo</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gridea 搭建指南]]></title>
-        <id>https://limainong.github.io/post/hello-gridea/</id>
-        <link href="https://limainong.github.io/post/hello-gridea/">
-        </link>
-        <updated>2020-02-28T14:32:20.000Z</updated>
-        <summary type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-<!-- more -->
-<center>
-<table>
-<thead>
-<tr>
-<th>Gridea 官网</th>
-<th>GitHub主页</th>
-<th>示例网站</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://gridea.dev/">点击进入</a></td>
-<td><a href="https://github.com/getgridea/gridea">点击进入</a></td>
-<td><a href="https://limainong.github.io/">点击进入</a></td>
-</tr>
-</tbody>
-</table>
-</center>
-<h1 id="搭建教程">搭建教程 📖</h1>
-<p>你好，欢迎开始愉快的 Gridea 之旅～</p>
-<h2 id="安装">安装</h2>
-<p>⏬下载并安装 <a href="https://github.com/getgridea/gridea/releases">Gridea</a></p>
-<h2 id="配置">配置</h2>
-<p>Gridea 提供了将博客部署到 GitHub Pages、Coding Pages 和通过 SFTP 的方式上传到自己的服务器的功能。下面将以 GitHub 为例，来讲一下部署流程。</p>
-<ol>
-<li><strong>创建 GitHub 账号，并创建一个仓库 Token</strong>。点击 <a href="https://github.io/">GitHub</a>，进行注册。登录 GitHub 之后，点击<a href="https://github.com/settings/tokens/new">这里</a>创建一个 Token，勾选上 <strong>repo 的全部权限</strong>即可。生成之后<strong>记得把 Token 复制到你的本地</strong>，因为一旦关闭网页将不能再看到它。<br>
-<img src="https://limainong.github.io/post-images/1582896087260.png" alt="" loading="lazy"><br>
-<img src="https://limainong.github.io/post-images/1582896156378.png" alt="" loading="lazy"></li>
-<li><strong>创建仓库</strong>，存放构建后的网站文件。创建一个公开仓库，名为<strong>用户名.github.io</strong>。（将用户名<strong>替换</strong>为你的 <strong>GitHub 用户名</strong>）<br>
-<img src="https://limainong.github.io/post-images/1582896185454.png" alt="" loading="lazy"></li>
-<li>进入 Gridea <strong>进行远程设置</strong>。按照下图的示例进行设置，然后<strong>点击「检测远程链接」</strong>，进行配置检查。<br>
-<img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
-<li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
-</ol>
-<p>以上，就<strong>完成一个静态博客的搭建</strong>了，期待你的每一次落笔成文。</p>
-<p><em><strong>尽情发挥你的才华吧！</strong></em></p>
-<center>
-<p><strong>😘 Enjoy~</strong></p>
-</center>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      理想国
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://limainong.github.io/post/guiguzi-01/" title="鬼谷子">鬼谷子</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://limainong.github.io/tag/HKMpJO7jV/"># 经典书籍</a>
+    
+      <a href="https://limainong.github.io/tag/XjBU90ugB2/"># 鬼谷子</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="Markdown 语法使用整理" href="https://limainong.github.io/post/markdown/">Markdown 语法使用整理</a>
+        <a class="nav-mobile-next" title="Markdown 语法使用整理" href="https://limainong.github.io/post/markdown/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
+    </div>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+    </div>
+  </body>
+  <script src="/media/js/motion.js"></script>
+</html>
