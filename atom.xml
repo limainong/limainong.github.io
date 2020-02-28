@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-28T14:19:04.654Z</updated>
+    <updated>2020-02-28T14:34:10.676Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://limainong.github.io/post/one/</id>
         <link href="https://limainong.github.io/post/one/">
         </link>
-        <updated>2020-02-28T06:31:15.000Z</updated>
+        <updated>2020-02-28T14:34:00.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="这是一个标题">这是一个标题</h2>
 <p>这里是测试的内容。</p>
 ]]></summary>
@@ -31,11 +31,12 @@
         <id>https://limainong.github.io/post/hello-gridea/</id>
         <link href="https://limainong.github.io/post/hello-gridea/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
+        <updated>2020-02-28T14:32:20.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  <strong>Gridea</strong> 是一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
 <!-- more -->
+<center>
 <table>
 <thead>
 <tr>
@@ -52,6 +53,7 @@
 </tr>
 </tbody>
 </table>
+</center>
 <h1 id="搭建教程">搭建教程👇</h1>
 <p>你好，欢迎开始愉快的 Gridea 之旅～</p>
 <h2 id="安装">安装</h2>
@@ -70,7 +72,9 @@
 </ol>
 <p>以上，就<strong>完成一个静态博客的搭建</strong>了，期待你的每一次落笔成文。</p>
 <p><em><strong>尽情发挥你的才华吧！</strong></em></p>
+<center>
 <p><strong>😘 Enjoy~</strong></p>
+</center>
 ]]></content>
     </entry>
 </feed>
