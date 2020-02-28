@@ -4,13 +4,13 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="一个理想者的博客。">
-<meta name="description" content="麦农的博客。">
+<meta name="description" content="一个理想者的理想国。">
 <meta name="theme-color" content="#000">
 <title>理想国</title>
-<link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1582897404275">
+<link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1582898257012">
 <link rel="stylesheet" href="https://limainong.github.io/styles/main.css">
 
-<link rel="stylesheet" href="/media/css/muse.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
 
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -30,9 +30,9 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       
-<div class=" muse">
+<div class=" gemini">
   <header class="header bg-color ">
-    <div class="blog-header box-shadow-wrapper  " id="header">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
         <div class="toggle-box">
           <div class="line line-top"></div>
@@ -49,7 +49,7 @@
           
         </div>
         
-          <p class="subtitle">精于心，简于形</p>
+          <p class="subtitle">一个理想者的理想国。</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -122,15 +122,15 @@
     </div>
     <div class="main-continer">
       
-      <div class="section-layout bg-color muse">
+      <div class="section-layout  gemini">
         <div class="section-layout-wrapper">
           <div class="sidebar">
     
-<div class="sidebar-wrapper box-shadow-wrapper ">
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://limainong.github.io/images/avatar.png"/>
     <p class="site-author-name">理想国</p>
-    <p class="site-description right-motion">这个人很懒，什么都不想写...</p>
+    <p class="site-description right-motion">一个理想者的博客。</p>
   </div>
   <div class="sidebar-item side-item-stat right-motion">
     <div class="sidebar-item-box">
@@ -154,6 +154,11 @@
     </div>
   </div>
   
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
   
     <div class="sidebar-item sidebar-item-social">
       <div class="social-item">
@@ -175,7 +180,7 @@
     <div class="friends-box">
       
         <p>
-          <a href="http://nav.92id.com">【网址导航🧭】</a>
+          <a href="http://nav.92id.com">【🧭网址导航】</a>
         </p>
       
     </div>
@@ -260,54 +265,16 @@
   </footer>
   
   
-    <div class="drawer-box left" id="drawer_box">
-      <span class="muse-line muse-line-first"></span>
-      <span class="muse-line muse-line-middle"></span>
-      <span class="muse-line muse-line-last"></span>
-    </div>
-  
-  <div class="muse back-to-top" id="back_to_top">
+  <div class="gemini back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
-  </div>
-  
-  
-  
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
     
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <input hidden id="player_cover" value="" />
-  <div class="music-list">
-  
   </div>
-  <script>
-  let musics = document.querySelector('.music-list').children;
-  let mediaMusic = [];
-  let cover = document.querySelector('#player_cover').value;
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    let splits = item.value.split(',');
-    mediaMusic.push({
-      name: splits[0],
-      artist: splits[1],
-      url: splits[2],
-      lrc: splits[3],
-      cover: cover
-    });
-  }
-  console.log(mediaMusic);
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  </script>
-
-
+  
+  
   
 </div>
 <script>
