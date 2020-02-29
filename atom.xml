@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-29T13:21:45.419Z</updated>
+    <updated>2020-02-29T13:29:00.772Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -31,11 +31,71 @@
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Gridea 搭建指南]]></title>
+        <id>https://limainong.github.io/post/hello-gridea/</id>
+        <link href="https://limainong.github.io/post/hello-gridea/">
+        </link>
+        <updated>2020-02-28T14:32:20.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
+<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
+<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+<!-- more -->
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Gridea 官网</th>
+<th style="text-align:center">GitHub主页</th>
+<th style="text-align:center">示例网站</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://gridea.dev/">点击进入</a></td>
+<td style="text-align:center"><a href="https://github.com/getgridea/gridea">点击进入</a></td>
+<td style="text-align:center"><a href="https://limainong.github.io/">点击进入</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="搭建教程">搭建教程 📖</h1>
+<p>你好，欢迎开始愉快的 Gridea 之旅～</p>
+<h2 id="安装">安装</h2>
+<p>⏬下载并安装 <a href="https://github.com/getgridea/gridea/releases">Gridea</a></p>
+<h2 id="配置">配置</h2>
+<p>Gridea 提供了将博客部署到 GitHub Pages、Coding Pages 和通过 SFTP 的方式上传到自己的服务器的功能。下面将以 GitHub 为例，来讲一下部署流程。</p>
+<ol>
+<li><strong>创建 GitHub 账号，并创建一个仓库 Token</strong>。点击 <a href="https://github.io/">GitHub</a>，进行注册。登录 GitHub 之后，点击<a href="https://github.com/settings/tokens/new">这里</a>创建一个 Token，勾选上 <strong>repo 的全部权限</strong>即可。生成之后<strong>记得把 Token 复制到你的本地</strong>，因为一旦关闭网页将不能再看到它。<br>
+<img src="https://limainong.github.io/post-images/1582896087260.png" alt="" loading="lazy"><br>
+<img src="https://limainong.github.io/post-images/1582896156378.png" alt="" loading="lazy"></li>
+<li><strong>创建仓库</strong>，存放构建后的网站文件。创建一个公开仓库，名为<strong>用户名.github.io</strong>。（将用户名<strong>替换</strong>为你的 <strong>GitHub 用户名</strong>）<br>
+<img src="https://limainong.github.io/post-images/1582896185454.png" alt="" loading="lazy"></li>
+<li>进入 Gridea <strong>进行远程设置</strong>。按照下图的示例进行设置，然后<strong>点击「检测远程链接」</strong>，进行配置检查。<br>
+<img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
+<li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
+</ol>
+<h3 id="增加评论">增加评论</h3>
+<p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
+<ol>
+<li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
+<img src="https://limainong.github.io/post-images/1582942979633.jpg" alt="" loading="lazy"></li>
+<li>保存后复制Client ID和Client Secret<br>
+<img src="https://limainong.github.io/post-images/1582943103565.jpg" alt="" loading="lazy"></li>
+<li>填入客户端完成了评论的配置。</li>
+</ol>
+<p>以上，就<strong>完成一个静态博客的搭建</strong>了，期待你的每一次落笔成文。</p>
+<p><em><strong>尽情发挥你的才华吧！</strong></em></p>
+<center>
+<p><strong>😘 Enjoy~</strong></p>
+</center>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Markdown 常用语法]]></title>
         <id>https://limainong.github.io/post/markdown/</id>
         <link href="https://limainong.github.io/post/markdown/">
         </link>
-        <updated>2020-02-28T14:34:00.000Z</updated>
+        <updated>2020-02-28T14:30:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
 <p>这里收集了Markdown的所有常用语法。</p>
 ]]></summary>
@@ -87,10 +147,10 @@
 <hr>
 <h2 id="任务清单">任务清单</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5543809"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-5543809"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-876286"><label class="task-list-item-label" for="task-item-876286"> list syntax required (any unordered or ordered list supported)</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4993568"><label class="task-list-item-label" for="task-item-4993568"> this is a complete item</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5148230"><label class="task-list-item-label" for="task-item-5148230"> this is an incomplete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4990975"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-4990975"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5549760"><label class="task-list-item-label" for="task-item-5549760"> list syntax required (any unordered or ordered list supported)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5005237"><label class="task-list-item-label" for="task-item-5005237"> this is a complete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4290705"><label class="task-list-item-label" for="task-item-4290705"> this is an incomplete item</label></li>
 </ul>
 <hr>
 <h2 id="删除线">删除线</h2>
@@ -324,66 +384,6 @@ Markdown笔记📒</p>
 </li>
 </ol>
 </section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gridea 搭建指南]]></title>
-        <id>https://limainong.github.io/post/hello-gridea/</id>
-        <link href="https://limainong.github.io/post/hello-gridea/">
-        </link>
-        <updated>2020-02-28T14:32:20.000Z</updated>
-        <summary type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-<p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-<!-- more -->
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Gridea 官网</th>
-<th style="text-align:center">GitHub主页</th>
-<th style="text-align:center">示例网站</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><a href="https://gridea.dev/">点击进入</a></td>
-<td style="text-align:center"><a href="https://github.com/getgridea/gridea">点击进入</a></td>
-<td style="text-align:center"><a href="https://limainong.github.io/">点击进入</a></td>
-</tr>
-</tbody>
-</table>
-<h1 id="搭建教程">搭建教程 📖</h1>
-<p>你好，欢迎开始愉快的 Gridea 之旅～</p>
-<h2 id="安装">安装</h2>
-<p>⏬下载并安装 <a href="https://github.com/getgridea/gridea/releases">Gridea</a></p>
-<h2 id="配置">配置</h2>
-<p>Gridea 提供了将博客部署到 GitHub Pages、Coding Pages 和通过 SFTP 的方式上传到自己的服务器的功能。下面将以 GitHub 为例，来讲一下部署流程。</p>
-<ol>
-<li><strong>创建 GitHub 账号，并创建一个仓库 Token</strong>。点击 <a href="https://github.io/">GitHub</a>，进行注册。登录 GitHub 之后，点击<a href="https://github.com/settings/tokens/new">这里</a>创建一个 Token，勾选上 <strong>repo 的全部权限</strong>即可。生成之后<strong>记得把 Token 复制到你的本地</strong>，因为一旦关闭网页将不能再看到它。<br>
-<img src="https://limainong.github.io/post-images/1582896087260.png" alt="" loading="lazy"><br>
-<img src="https://limainong.github.io/post-images/1582896156378.png" alt="" loading="lazy"></li>
-<li><strong>创建仓库</strong>，存放构建后的网站文件。创建一个公开仓库，名为<strong>用户名.github.io</strong>。（将用户名<strong>替换</strong>为你的 <strong>GitHub 用户名</strong>）<br>
-<img src="https://limainong.github.io/post-images/1582896185454.png" alt="" loading="lazy"></li>
-<li>进入 Gridea <strong>进行远程设置</strong>。按照下图的示例进行设置，然后<strong>点击「检测远程链接」</strong>，进行配置检查。<br>
-<img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
-<li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
-</ol>
-<h3 id="增加评论">增加评论</h3>
-<p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
-<ol>
-<li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
-<img src="https://limainong.github.io/post-images/1582942979633.jpg" alt="" loading="lazy"></li>
-<li>保存后复制Client ID和Client Secret<br>
-<img src="https://limainong.github.io/post-images/1582943103565.jpg" alt="" loading="lazy"></li>
-<li>填入客户端完成了评论的配置。</li>
-</ol>
-<p>以上，就<strong>完成一个静态博客的搭建</strong>了，期待你的每一次落笔成文。</p>
-<p><em><strong>尽情发挥你的才华吧！</strong></em></p>
-<center>
-<p><strong>😘 Enjoy~</strong></p>
-</center>
 ]]></content>
     </entry>
 </feed>
