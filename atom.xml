@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-29T03:05:42.761Z</updated>
+    <updated>2020-02-29T11:44:17.595Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -37,186 +37,273 @@
 ##### H5标题
 ###### H6标题
 </code></pre>
+<hr>
 <h2 id="分隔符">分隔符</h2>
 <p>分隔符就是一条横线。</p>
-<pre><code>---
+<pre><code>--- 
+或
+*****
 </code></pre>
+<blockquote>
+<hr>
+</blockquote>
 <h2 id="文本样式">文本样式</h2>
 <table>
 <thead>
 <tr>
-<th>斜体</th>
-<th>加粗</th>
-<th>斜体加粗</th>
+<th style="text-align:center">斜体</th>
+<th style="text-align:center">加粗</th>
+<th style="text-align:center">斜体加粗</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>*斜体文本*</code></td>
-<td><code>**加粗**</code></td>
-<td><code>***斜体加粗***</code></td>
+<td style="text-align:center"><code>*斜体文本*</code></td>
+<td style="text-align:center"><code>**加粗**</code></td>
+<td style="text-align:center"><code>***斜体加粗***</code></td>
 </tr>
 </tbody>
 </table>
-<p>删除线<br>
-文字有一条删除线的效果</p>
-<pre><code>~~ 删除效果 ~~
+<hr>
+<h2 id="删除线">删除线</h2>
+<p>文字有一条删除线的效果</p>
+<pre><code>~~删除效果~~
 </code></pre>
-<p>高亮<br>
-文字用醒目的高亮显示</p>
+<blockquote>
+<p><s>删除效果</s></p>
+</blockquote>
+<hr>
+<h2 id="下划线">下划线</h2>
+<p>下划线可以利用html标签进行</p>
+<pre><code>&lt;u&gt;下划线标题&lt;/u&gt;
+</code></pre>
+<blockquote>
+<p><u>下划线标题</u></p>
+</blockquote>
+<hr>
+<h2 id="高亮">高亮</h2>
+<p>文字用醒目的高亮显示</p>
 <pre><code>这是` 高亮文本 `效果。
 </code></pre>
 <p><code>高亮文本</code></p>
-<p>代码块<br>
-代码块就是将源码直接进行展示，可在开始的** ``` **后面加上代码语种名称。</p>
-<p><code>` javascript var str = &quot;hello world!&quot;; alert(str);</code> `<br>
-为了显示，上面给出的```加了一个空格。</p>
-<p>var str = &quot;hello world!&quot;;<br>
-alert(str);<br>
-上面就是效果</p>
-<p>图片<br>
-图片展示</p>
-<p>方式1：<br>
-<img src="https://help.github.com/assets/images/site/favicon.ico" alt="文本内容" title="logo" loading="lazy"><br>
-方式2：<br>
-![文本内容][img]<br>
-[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;<br>
-方式1：<br>
-文本内容</p>
-<p>方式2：<br>
-![文本内容][img]<br>
-[img]:https://help.github.com/assets/images/site/favicon.ico &quot;logo&quot;</p>
-<h6 id="url-more">说明：</h6>
-<p>URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有鼠标hover提示文本效果。</p>
-<p>推荐使用方式2，当一个链接在文中多次出现的时候，就会体现出其优点了。</p>
-<p>另外，后面的提示文本除了使用 &quot;提示文本&quot; 外，还可以是 '提示文本' 和 (提示文本) 。</p>
-<p>链接<br>
-链接根据链接目标可分为站内站外链接，按照类型可分为文本链接和图片链接。<br>
-综上所述，可分为以下三种：</p>
-<p>文本链接<br>
-给文本信息添加超链接</p>
-<p>1.<a href="https://github.com/SeayXu">https://github.com/SeayXu</a><br>
-2.<a href="https://github.com/SeayXu" title="SeayXu">文本链接</a><br>
-3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
-<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-1.https://github.com/SeayXu<br>
-2.文本链接<br>
-3.<a href="URL" title="鼠标hover提示文本">文本链接</a><br>
-<a href="URL" title="鼠标hover提示文本">id</a>:https://github.com/SeayXu &quot;SeayXu&quot;</p>
-<p>链接URL相关说明和图片一样，请查看</p>
-<p>特例：<br>
-当链接的文本内容和链接Id相同的时候，可以不用写链接后面的Id。</p>
-<p>[SeayXu][]<br>
-[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;<br>
-[SeayXu][]<br>
-[SeayXu]: https://github.com/SeayXu &quot;Seay&quot;</p>
-<p>图片链接<br>
-给图片加上超链接</p>
-<p>方式1：<br>
-<a href="https://github.com/SeayXu" title="SeayXu"><img src="https://help.github.com/assets/images/site/favicon.ico" alt="Github" title="Seay" loading="lazy"></a><br>
-方式2：<br>
-[![Github][img-url]][link-url]<br>
-[link-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-[img-url]:https://help.github.com/assets/images/site/favicon.ico &quot;Seay&quot;<br>
-方式1：</p>
-<p>Github</p>
-<p>方式2：<br>
-![Github][github-img]<br>
-提示：由于各个Markdown解析不同，所以显示的提示文本有可能也不太一样。</p>
-<p>锚点<br>
-锚点其实与文本链接和图片链接用法是一样的，只不过是在本页面内，需要稍微改动下。</p>
-<p>设置锚点链接目标：</p>
-<h6 id="url-more">说明：</h6>
-添加锚点：
-<p><a href="#url-more" title="anchor alt text">锚点</a><br>
-[锚点][anchor]<br>
-[anchor]:#url-more &quot;anchor alt text&quot;<br>
-锚点<br>
-[锚点][anchor]<br>
-[anchor]:#url-more &quot;anchor alt text&quot;</p>
-<p>说明：相对于文本链接和图片链接，主要是添加了锚点链接目标这一操作，使用语法跟文本链接和图片链接一样。</p>
-<p>列表<br>
-列表分为有序和无序两种。</p>
-<p>无序列表<br>
-无序列表有三种表示方法：* 、 + 和 -。</p>
-<p>下级在上级基础上前面多加两个空格，符号与内容直接有一个空格。</p>
-<p>无序列表1：</p>
-<ul>
-<li>一级条目1</li>
-<li>一级条目2
-<ul>
-<li>二级条目1</li>
-<li>二级条目2
-<ul>
-<li>三级条目1</li>
-<li>三级条目2</li>
-<li>三级条目3</li>
-</ul>
-</li>
-<li>二级条目3</li>
-</ul>
-</li>
-<li>一级条目3<br>
-一级条目1<br>
-一级条目2<br>
-二级条目1<br>
-二级条目2<br>
-三级条目1<br>
-三级条目2<br>
-三级条目3<br>
-二级条目3<br>
-一级条目3<br>
-在这里只演示一种，另外两种就是把 * 分别换成 + 和 - 。</li>
-</ul>
-<p>有序列表<br>
-有序列表与无序列表类似，只不是是将前面的符号换成数字而已。</p>
-<ol>
-<li>一级条目1</li>
-<li>一级条目2</li>
-<li>二级条目1</li>
-</ol>
-<ul>
-<li>二级条目2
-<ul>
-<li>三级条目1</li>
-</ul>
-<ul>
-<li>三级条目2</li>
-</ul>
-<ul>
-<li>三级条目3</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>二级条目3</li>
-</ul>
-<ol start="2">
-<li>一级条目3<br>
-一级条目1<br>
-一级条目2<br>
-二级条目1<br>
-二级条目2<br>
-三级条目1<br>
-三级条目2<br>
-三级条目3<br>
-二级条目3<br>
-一级条目3<br>
-说明：</li>
-</ol>
-<p>有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
-有序列表可结合无序列表，只在第一个条目输入序号后，同级条目会自动编号。<br>
-引用<br>
-引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。</p>
+<hr>
+<h2 id="代码块">代码块</h2>
+<p>代码块就是将源码直接进行展示，可在开始的 ``` 后面加上代码语种名称。</p>
+<pre><code class="language-javascript">var str = &quot;hello world!&quot;;
+alert(str);
+</code></pre>
+<hr>
+<h2 id="区块">区块</h2>
+<p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
+<pre><code>&gt; 区块引用
+</code></pre>
 <blockquote>
-<p>这是一段包含<strong>加粗</strong>的 <em>斜体</em> 和 <em><strong>斜粗体</strong></em> 并带有<code>高亮</code>显示的一段文本来自<a href="https://github.com/SeayXu" title="SeayXu">我的Github</a>。<br>
-我是图片：<br>
-![github logo][github-img]<br>
-[github-url]:https://github.com/SeayXu &quot;SeayXu&quot;<br>
-这是一段包含加粗的 斜体 和 斜粗体 并带有高亮显示的一段文本来自我的Github。<br>
-我是图片：<br>
-github logo</p>
+<p>区块引用<br>
+Markdown笔记📒</p>
 </blockquote>
+<h3 id="区块嵌套">区块嵌套</h3>
+<p>区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</p>
+<pre><code>&gt; 最外层
+&gt; &gt; 第一层嵌套
+&gt; &gt; &gt; 第二层嵌套
+</code></pre>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="脚注">脚注</h2>
+<p>脚注是对文本的补充说明。</p>
+<p>Markdown 脚注的格式如下:<br>
+<code>[^要注明的文本]</code></p>
+<blockquote>
+<p>创建脚注格式类似这样 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
+</blockquote>
+<hr>
+<h2 id="图片">图片</h2>
+<p>图片展示<br>
+方式1：<br>
+<img src="https://www.runoob.com/wp-content/uploads/2019/03/iconfinder_markdown_298823.png" alt="图片展示" loading="lazy"></p>
+<p>方式2：</p>
+<pre><code>![alt 属性文本](图片地址)
+![alt 属性文本](图片地址 &quot;可选标题&quot;)
+</code></pre>
+<p>开头一个感叹号 !<br>
+接着一个方括号，里面放上图片的替代文字<br>
+接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。</p>
+<blockquote></blockquote>
+<p><img src="http://static.runoob.com/images/runoob-logo.png" alt="alt 属性文本" loading="lazy"><br>
+<img src="http://static.runoob.com/images/runoob-logo.png" alt="alt 属性文本" title="提示文本" loading="lazy"></p>
+<p>URL后面的内容是鼠标hover提示文本，可以省略，省略时就没有鼠标hover提示文本效果。</p>
+<p>当然，你也可以像网址那样对图片网址使用变量:</p>
+<pre><code>这个链接用 1 作为网址变量 [RUNOOB][1].
+然后在文档的结尾为变量赋值（网址）
+[1]: http://static.runoob.com/images/runoob-logo.png
+</code></pre>
+<p>推荐使用方式2，当一个链接在文中多次出现的时候，就会体现出其优点了。<br>
+另外，后面的提示文本除了使用 &quot;提示文本&quot; 外，还可以是 '提示文本' 和 (提示文本) 。</p>
+<hr>
+<h2 id="表格">表格</h2>
+<p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。<br>
+语法格式如下：</p>
+<pre><code>|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<h3 id="对齐方式">对齐方式</h3>
+<p>我们可以设置表格的对齐方式：</p>
+<pre><code>-: 设置内容和标题栏居右对齐。
+:- 设置内容和标题栏居左对齐。
+:-: 设置内容和标题栏居中对齐。
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="链接">链接</h2>
+<p>链接根据链接目标可分为站内站外链接，按照类型可分为文本链接和图片链接。<br>
+综上所述，可分为以下三种：</p>
+<h3 id="文本链接">文本链接</h3>
+<p>给文本信息添加超链接</p>
+<pre><code>[超链接标题](链接地址)
+</code></pre>
+<h3 id="图片链接">图片链接</h3>
+<p>给图片加上超链接</p>
+<h3 id="锚点链接">锚点链接</h3>
+<p>锚点其实与文本链接和图片链接用法是一样的，只不过是在本页面内，需要稍微改动下。</p>
+<p>设置锚点链接目标：</p>
+<p>添加锚点：</p>
+<p>说明：相对于文本链接和图片链接，主要是添加了锚点链接目标这一操作，使用语法跟文本链接和图片链接一样。</p>
+<h2 id="高级链接">高级链接</h2>
+<p>链接也可以用变量来代替，文档末尾附带变量地址：</p>
+<pre><code>这个链接用 1 作为网址变量 [Google][1]
+这个链接用 runoob 作为网址变量 [Runoob][runoob]
+然后在文档的结尾为变量赋值（网址）
+</code></pre>
+<p>链接也可以用变量来代替，文档末尾附带变量地址：<br>
+这个链接用 1 作为网址变量 [Google][1]<br>
+这个链接用 理想国 作为网址变量 [理想国][理想国]<br>
+然后在文档的结尾为变量赋值（网址）<br>
+[1]: http://www.google.com/<br>
+[理想国]: http://www.runoob.com/</p>
+<hr>
+<h2 id="列表">列表</h2>
+<p>列表分为有序和无序两种。</p>
+<h3 id="无序列表">无序列表</h3>
+<p>无序列表有三种表示方法：* 、 + 和 -。<br>
+下级在上级基础上前面多加两个空格，符号与内容直接有一个空格。</p>
+<pre><code>* 第一项
+* 第二项
+* 第三项
+
++ 第一项
++ 第二项
++ 第三项
+
+- 第一项
+- 第二项
+- 第三项
+</code></pre>
+<blockquote></blockquote>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<h3 id="有序列表">有序列表</h3>
+<p>有序列表与无序列表类似，只不是是将前面的符号换成数字而已，并加上 . 号来表示，如：</p>
+<pre><code>1. 第一项
+2. 第二项
+3. 第三项
+</code></pre>
+<p>说明：</p>
+<p>有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
+有序列表可结合无序列表，只在第一个条目输入序号后，同级条目会自动编号。</p>
+<h3 id="列表嵌套">列表嵌套</h3>
+<p>列表嵌套只需在子列表中的选项添加<strong>四个空格</strong>即可：</p>
+<pre><code>1. 第一项：
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项：
+    - 第二项嵌套的第一个元素
+    - 第二项嵌套的第二个元素
+</code></pre>
+<blockquote></blockquote>
+<ol>
+<li>第一项：
+<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：
+<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="引用">引用</h2>
+<p>引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>这里是脚注的说明文字！！！ <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
@@ -231,24 +318,22 @@ github logo</p>
         <content type="html"><![CDATA[<p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
 <p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
 <!-- more -->
-<center>
 <table>
 <thead>
 <tr>
-<th>Gridea 官网</th>
-<th>GitHub主页</th>
-<th>示例网站</th>
+<th style="text-align:center">Gridea 官网</th>
+<th style="text-align:center">GitHub主页</th>
+<th style="text-align:center">示例网站</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://gridea.dev/">点击进入</a></td>
-<td><a href="https://github.com/getgridea/gridea">点击进入</a></td>
-<td><a href="https://limainong.github.io/">点击进入</a></td>
+<td style="text-align:center"><a href="https://gridea.dev/">点击进入</a></td>
+<td style="text-align:center"><a href="https://github.com/getgridea/gridea">点击进入</a></td>
+<td style="text-align:center"><a href="https://limainong.github.io/">点击进入</a></td>
 </tr>
 </tbody>
 </table>
-</center>
 <h1 id="搭建教程">搭建教程 📖</h1>
 <p>你好，欢迎开始愉快的 Gridea 之旅～</p>
 <h2 id="安装">安装</h2>
@@ -265,7 +350,7 @@ github logo</p>
 <img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
 <li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
 </ol>
-<h3 id="评论配置">评论配置</h3>
+<h3 id="增加评论">增加评论</h3>
 <p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
 <ol>
 <li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
