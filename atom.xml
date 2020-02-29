@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-28T20:04:32.877Z</updated>
+    <updated>2020-02-29T02:26:32.964Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -264,6 +264,15 @@ github logo</p>
 <li>进入 Gridea <strong>进行远程设置</strong>。按照下图的示例进行设置，然后<strong>点击「检测远程链接」</strong>，进行配置检查。<br>
 <img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
 <li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
+</ol>
+<h2 id="评论配置">评论配置</h2>
+<p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
+<ol>
+<li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
+<img src="https://limainong.github.io/post-images/1582942979633.jpg" alt="" loading="lazy"></li>
+<li>保存后复制Client ID和Client Secret<br>
+<img src="https://limainong.github.io/post-images/1582943103565.jpg" alt="" loading="lazy"></li>
+<li>填入客户端完成了评论的配置。</li>
 </ol>
 <p>以上，就<strong>完成一个静态博客的搭建</strong>了，期待你的每一次落笔成文。</p>
 <p><em><strong>尽情发挥你的才华吧！</strong></em></p>
