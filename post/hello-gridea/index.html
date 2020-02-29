@@ -7,7 +7,7 @@
 <meta name="description" content="一个理想者的理想国。">
 <meta name="theme-color" content="#000">
 <title>Gridea 搭建指南 | 理想国</title>
-<link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1582943174956">
+<link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1582945511644">
 <link rel="stylesheet" href="https://limainong.github.io/styles/main.css">
 
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -225,8 +225,11 @@
 <li><a href="#%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B">搭建教程 📖</a>
 <ul>
 <li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE">配置</a>
+<ul>
 <li><a href="#%E8%AF%84%E8%AE%BA%E9%85%8D%E7%BD%AE">评论配置</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -551,7 +554,7 @@ window.addEventListener('load', function() {
 <img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
 <li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
 </ol>
-<h2 id="评论配置">评论配置</h2>
+<h3 id="评论配置">评论配置</h3>
 <p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
 <ol>
 <li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
@@ -609,7 +612,7 @@ window.addEventListener('load', function() {
   var gitalk = new Gitalk({
     clientID: '6bf922d978b6262184e3',
     clientSecret: '133457231d2908896e72d1516c1824b105b13071',
-    repo: 'Comment',
+    repo: 'limainong.github.io',
     owner: 'limainong',
     admin: ['limainong'],
     id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50

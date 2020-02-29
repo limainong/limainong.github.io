@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-29T02:26:32.964Z</updated>
+    <updated>2020-02-29T03:05:42.761Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -265,7 +265,7 @@ github logo</p>
 <img src="https://limainong.github.io/post-images/1582896211243.png" alt="" loading="lazy"></li>
 <li><strong>同步</strong>。点击 Gridea 中的 同步按钮即可。初次部署等待几分钟之后就可以去浏览器访问了，默认地址为你在第 3 步所填写的域名。</li>
 </ol>
-<h2 id="评论配置">评论配置</h2>
+<h3 id="评论配置">评论配置</h3>
 <p>这里以<a href="https://github.com/gitalk/gitalk">Gtalk</a>为例，讲一下评论的配置</p>
 <ol>
 <li>首先回到刚才设置的口令的列表，创建一个OAuth Apps，填入信息<br>
