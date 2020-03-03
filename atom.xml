@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-02-29T13:29:00.772Z</updated>
+    <updated>2020-03-03T07:31:05.323Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -20,14 +20,14 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>整理心理学法则的目的在于通过这些“一看就明白”的法则，知晓社会人际之间的潜规则。</p>
 <!-- more -->
-<h2 id="人际关系类">人际关系类</h2>
-<h3 id="首因效应">首因效应</h3>
-<h4 id="概念解释">概念解释</h4>
-<p>  首因效应，也称为第一印象作用，或先入为主效应。是指个体在社会认知过程中，通过“第一印象”最先输入的信息对客体以后的认知产生的影响作用。第一印象作用最强，持续的时间也长，比以后得到的信息对于事物整个印象产生的作用更强。</p>
-<p>  首因效应与近因效应是由美国心理学家洛钦斯首先提出的。它们反映了人际交往中主体信息出现的次序对印象形成所产生的影响。首因效应是指人际交往中给人留下的第一印象至关重要，对印象的形成影响很大。洛钦斯在1957年做的实验中向四组大学生介绍某个陌生人：在向第一组介绍时说他是个性格外向的人；在向第二组介绍时说他是个性格内向的人；在向第三组介绍时，先说他是性格外向的人，后说他又是一个性格内向的人；在向第四组介绍时同在第三组介绍时的说法一样，只是次序颠倒了。随后洛钦斯要求四个组用上面介绍的术语来描述这个陌生人。第一、二组在描述时没有发生任何问题，但第三、四组对陌生人的印象完全与提供信息的次序相对应——先提供的信息占优势。</p>
+<h1 id="人际关系类">人际关系类</h1>
+<h2 id="首因效应">首因效应</h2>
+<h3 id="概念解释">概念解释</h3>
+<p>首因效应，也称为第一印象作用，或先入为主效应。是指个体在社会认知过程中，通过“第一印象”最先输入的信息对客体以后的认知产生的影响作用。第一印象作用最强，持续的时间也长，比以后得到的信息对于事物整个印象产生的作用更强。</p>
+<p>首因效应与近因效应是由美国心理学家洛钦斯首先提出的。它们反映了人际交往中主体信息出现的次序对印象形成所产生的影响。首因效应是指人际交往中给人留下的第一印象至关重要，对印象的形成影响很大。洛钦斯在1957年做的实验中向四组大学生介绍某个陌生人：在向第一组介绍时说他是个性格外向的人；在向第二组介绍时说他是个性格内向的人；在向第三组介绍时，先说他是性格外向的人，后说他又是一个性格内向的人；在向第四组介绍时同在第三组介绍时的说法一样，只是次序颠倒了。随后洛钦斯要求四个组用上面介绍的术语来描述这个陌生人。第一、二组在描述时没有发生任何问题，但第三、四组对陌生人的印象完全与提供信息的次序相对应——先提供的信息占优势。</p>
 <p><a href="https://wiki.mbalib.com/wiki/%E9%A6%96%E5%9B%A0%E6%95%88%E5%BA%94#_note-0"> 详情&gt;&gt; </a></p>
-<h3 id="名片效应">名片效应</h3>
-<h4 id="概念解释-2">概念解释</h4>
+<h2 id="名片效应">名片效应</h2>
+<h3 id="概念解释-2">概念解释</h3>
 ]]></content>
     </entry>
     <entry>
@@ -117,16 +117,18 @@
 ##### H5标题
 ###### H6标题
 </code></pre>
-<hr>
+<h2 id="首行缩进">首行缩进</h2>
+<p>由于Markdown为国外的开发者，所以对于中文首行缩进是不支持的，但是可以通过在首字前面加<br>
+<code>&amp;emsp;&amp;emsp;</code><br>
+进行中文的首行缩进<br>
+  样式效果</p>
 <h2 id="分隔符">分隔符</h2>
 <p>分隔符就是一条横线。</p>
 <pre><code>--- 
 或
 *****
 </code></pre>
-<blockquote>
 <hr>
-</blockquote>
 <h2 id="文本样式">文本样式</h2>
 <table>
 <thead>
@@ -144,23 +146,18 @@
 </tr>
 </tbody>
 </table>
-<hr>
 <h2 id="任务清单">任务清单</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4990975"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-4990975"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5549760"><label class="task-list-item-label" for="task-item-5549760"> list syntax required (any unordered or ordered list supported)</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5005237"><label class="task-list-item-label" for="task-item-5005237"> this is a complete item</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4290705"><label class="task-list-item-label" for="task-item-4290705"> this is an incomplete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2172565"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-2172565"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9792403"><label class="task-list-item-label" for="task-item-9792403"> list syntax required (any unordered or ordered list supported)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6939081"><label class="task-list-item-label" for="task-item-6939081"> this is a complete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2507286"><label class="task-list-item-label" for="task-item-2507286"> this is an incomplete item</label></li>
 </ul>
-<hr>
 <h2 id="删除线">删除线</h2>
 <p>文字有一条删除线的效果</p>
 <pre><code>~~删除效果~~
 </code></pre>
-<blockquote>
 <p><s>删除效果</s></p>
-</blockquote>
-<hr>
 <h2 id="下划线">下划线</h2>
 <p>下划线可以利用html标签进行</p>
 <pre><code>&lt;u&gt;下划线标题&lt;/u&gt;
@@ -168,19 +165,16 @@
 <blockquote>
 <p><u>下划线标题</u></p>
 </blockquote>
-<hr>
 <h2 id="高亮">高亮</h2>
 <p>文字用醒目的高亮显示</p>
 <pre><code>这是` 高亮文本 `效果。
 </code></pre>
 <p><code>高亮文本</code></p>
-<hr>
 <h2 id="代码块">代码块</h2>
 <p>代码块就是将源码直接进行展示，可在开始的 ``` 后面加上代码语种名称。</p>
 <pre><code class="language-javascript">var str = &quot;hello world!&quot;;
 alert(str);
 </code></pre>
-<hr>
 <h2 id="区块">区块</h2>
 <p>Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
 <pre><code>&gt; 区块引用
@@ -211,7 +205,6 @@ Markdown笔记📒</p>
 <blockquote>
 <p>创建脚注格式类似这样 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
 </blockquote>
-<hr>
 <h2 id="图片">图片</h2>
 <p>图片展示<br>
 方式1：<br>
@@ -234,12 +227,11 @@ Markdown笔记📒</p>
 </code></pre>
 <p>推荐使用方式2，当一个链接在文中多次出现的时候，就会体现出其优点了。<br>
 另外，后面的提示文本除了使用 &quot;提示文本&quot; 外，还可以是 '提示文本' 和 (提示文本) 。</p>
-<hr>
 <h2 id="表格">表格</h2>
 <p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。<br>
 语法格式如下：</p>
-<pre><code>|  表头   | 表头  |
-|  ----  | ----  |
+<pre><code>|  表头   |   表头  |
+|  ----  |  ----  |
 | 单元格  | 单元格 |
 | 单元格  | 单元格 |
 </code></pre>
@@ -288,7 +280,6 @@ Markdown笔记📒</p>
 </tr>
 </tbody>
 </table>
-<hr>
 <h2 id="链接">链接</h2>
 <p>链接根据链接目标可分为站内站外链接，按照类型可分为文本链接和图片链接。</p>
 <p>给文本信息添加超链接</p>
@@ -307,7 +298,6 @@ Markdown笔记📒</p>
 然后在文档的结尾为变量赋值（网址）<br>
 [1]: http://www.google.com/<br>
 [理想国]: http://www.runoob.com/</p>
-<hr>
 <h2 id="列表">列表</h2>
 <p>列表分为有序和无序两种。</p>
 <h3 id="无序列表">无序列表</h3>
@@ -325,7 +315,6 @@ Markdown笔记📒</p>
 - 第二项
 - 第三项
 </code></pre>
-<blockquote></blockquote>
 <ul>
 <li>第一项</li>
 <li>第二项</li>
@@ -347,8 +336,13 @@ Markdown笔记📒</p>
 2. 第二项
 3. 第三项
 </code></pre>
-<p>说明：</p>
-<p>有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<p>说明：<br>
+有序列表有自动纠错功能，当序号输入错误时，会自动更正显示序号。<br>
 有序列表可结合无序列表，只在第一个条目输入序号后，同级条目会自动编号。</p>
 <h3 id="列表嵌套">列表嵌套</h3>
 <p>列表嵌套只需在子列表中的选项添加<strong>四个空格</strong>即可：</p>
@@ -359,7 +353,6 @@ Markdown笔记📒</p>
     - 第二项嵌套的第一个元素
     - 第二项嵌套的第二个元素
 </code></pre>
-<blockquote></blockquote>
 <ol>
 <li>第一项：
 <ul>
@@ -374,7 +367,6 @@ Markdown笔记📒</p>
 </ul>
 </li>
 </ol>
-<hr>
 <h2 id="引用">引用</h2>
 <p>引用内容可以嵌套引用和使用其他语法，在引用内容后面空一行就表示引用结束。</p>
 <hr class="footnotes-sep">
