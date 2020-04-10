@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-04-10T08:07:20.296Z</updated>
+    <updated>2020-04-10T08:12:53.898Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -16,8 +16,12 @@
         <link href="https://limainong.github.io/post/chaogubiji-01/">
         </link>
         <updated>2020-02-28T19:09:56.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="专有名词解释">专有名词解释</h1>
+<p>股市中有一些约定俗成的词语来表达一些特定的含义,这就是股市术语,也叫股票术语,下面就介绍一些股市常用的术语：<a href="http://www.net767.com/gupiao/stock/200806/6640.html">点击进入&gt;&gt;</a></p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="专有名词解释">专有名词解释</h1>
 <p>股市中有一些约定俗成的词语来表达一些特定的含义,这就是股市术语,也叫股票术语,下面就介绍一些股市常用的术语：<a href="http://www.net767.com/gupiao/stock/200806/6640.html">点击进入&gt;&gt;</a></p>
+<!-- more -->
 <blockquote></blockquote>
 <ul>
 <li>牛市
@@ -705,10 +709,10 @@
 </table>
 <h2 id="任务清单">任务清单</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7721154"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-7721154"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9804935"><label class="task-list-item-label" for="task-item-9804935"> list syntax required (any unordered or ordered list supported)</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4815429"><label class="task-list-item-label" for="task-item-4815429"> this is a complete item</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7147897"><label class="task-list-item-label" for="task-item-7147897"> this is an incomplete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-417849"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-417849"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9415238"><label class="task-list-item-label" for="task-item-9415238"> list syntax required (any unordered or ordered list supported)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6108766"><label class="task-list-item-label" for="task-item-6108766"> this is a complete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8668888"><label class="task-list-item-label" for="task-item-8668888"> this is an incomplete item</label></li>
 </ul>
 <h2 id="删除线">删除线</h2>
 <p>文字有一条删除线的效果</p>
