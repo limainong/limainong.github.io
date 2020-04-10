@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://limainong.github.io</id>
     <title>理想国</title>
-    <updated>2020-04-10T08:06:10.103Z</updated>
+    <updated>2020-04-10T08:07:20.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://limainong.github.io"/>
     <link rel="self" href="https://limainong.github.io/atom.xml"/>
@@ -705,10 +705,10 @@
 </table>
 <h2 id="任务清单">任务清单</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-972028"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-972028"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3432963"><label class="task-list-item-label" for="task-item-3432963"> list syntax required (any unordered or ordered list supported)</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9292602"><label class="task-list-item-label" for="task-item-9292602"> this is a complete item</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7897937"><label class="task-list-item-label" for="task-item-7897937"> this is an incomplete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7721154"> @mentions, #refs, <a href="">links</a>, <strong>formatting</strong>, and <del>tags</del><label class="task-list-item-label" for="task-item-7721154"> @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9804935"><label class="task-list-item-label" for="task-item-9804935"> list syntax required (any unordered or ordered list supported)</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4815429"><label class="task-list-item-label" for="task-item-4815429"> this is a complete item</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7147897"><label class="task-list-item-label" for="task-item-7147897"> this is an incomplete item</label></li>
 </ul>
 <h2 id="删除线">删除线</h2>
 <p>文字有一条删除线的效果</p>
