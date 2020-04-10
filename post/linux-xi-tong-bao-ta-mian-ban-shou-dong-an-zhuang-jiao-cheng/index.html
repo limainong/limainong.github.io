@@ -6,7 +6,7 @@
 <meta name="keywords" content="一个理想者的博客。">
 <meta name="description" content="一个理想者的理想国。">
 <meta name="theme-color" content="#000">
-<title>关于 | 理想国</title>
+<title>Linux系统 宝塔面板手动安装教程 | 理想国</title>
 <link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1586505954806">
 <link rel="stylesheet" href="https://limainong.github.io/styles/main.css">
 
@@ -25,7 +25,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="关于" />
+    <meta name="description" content="Linux系统 宝塔面板手动安装教程" />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -224,10 +224,11 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E4%BA%A4%E4%B8%AA%E6%9C%8B%E5%8F%8B">📬 交个朋友</a></li>
+<li><a href="#1-%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95linux">1. 后台登录Linux</a></li>
+<li><a href="#2-%E8%AE%B0%E5%BE%97%E6%A3%80%E6%9F%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E5%85%A8%E7%BB%84%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E6%94%BE%E8%A1%8C">2. 记得检查服务器安全组端口是否放行</a></li>
+<li><a href="#3-%E8%BE%93%E5%85%A5%E5%AE%89%E8%A3%85%E4%BB%A3%E7%A0%81">3. 输入安装代码</a></li>
+<li><a href="#4-%E5%AE%8C%E6%88%90%E5%AE%89%E8%A3%85-%E8%AE%BF%E9%97%AE%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%85%A5%E5%8F%A3">4. 完成安装 访问宝塔面板入口</a></li>
+<li><a href="#5%E8%BE%93%E5%85%A5%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE-%E6%88%90%E5%8A%9F">5.输入账号密码访问 成功！</a></li>
 </ul>
 </li>
 </ul>
@@ -483,8 +484,8 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://limainong.github.io/post/about/">
-      关于
+    <a class="post-title-link" href="https://limainong.github.io/post/linux-xi-tong-bao-ta-mian-ban-shou-dong-an-zhuang-jiao-cheng/">
+      Linux系统 宝塔面板手动安装教程
     </a>
   </h1>
   <div class="post-meta">
@@ -492,7 +493,7 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-02-26</span>
+      <span>2020-03-06</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -503,23 +504,29 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>67<span class="pc-show">字数</span></span>
+      <span>133<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <blockquote>
-<p>欢迎来到我的小站，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>记录一些理想主义。</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>一个小小的产品经理，认真工作，努力生活。</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>运动、阅读、想七搞八。</p>
-<h2 id="交个朋友">📬 交个朋友</h2>
-<p>我的WeChat：mainongxiong</p>
+                <h2 id="1-后台登录linux">1. 后台登录Linux</h2>
+<p>以腾讯云服务器为例</p>
+<h2 id="2-记得检查服务器安全组端口是否放行">2. 记得检查服务器安全组端口是否放行</h2>
+<p>建议直接直接一键放行所有端口</p>
+<h2 id="3-输入安装代码">3. 输入安装代码</h2>
+<pre><code>
+yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh
+</code></pre>
+<h2 id="4-完成安装-访问宝塔面板入口">4. 完成安装 访问宝塔面板入口</h2>
+<p>查询入口地址输入命令 <code>/etc/init.d/bt default</code></p>
+<figure data-type="image" tabindex="1"><img src="https://limainong.github.io/post-images/1583472308261.png" alt="" loading="lazy"></figure>
+<pre><code>
+1*9.206.1*7.108:8888/login
+</code></pre>
+<h2 id="5输入账号密码访问-成功">5.输入账号密码访问 成功！</h2>
+<hr>
+<p><a href="https://www.bt.cn/bbs/thread-19376-1-1.html">更多安装参考链接 &gt;&gt;</a></p>
 
               </div>
               <div class="post-footer">
@@ -530,7 +537,7 @@ window.addEventListener('load', function() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://limainong.github.io/post/about/" title="关于">关于</a>
+      <a href="https://limainong.github.io/post/linux-xi-tong-bao-ta-mian-ban-shou-dong-an-zhuang-jiao-cheng/" title="Linux系统 宝塔面板手动安装教程">Linux系统 宝塔面板手动安装教程</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="一个理想者的博客。">
 <meta name="description" content="一个理想者的理想国。">
 <meta name="theme-color" content="#000">
-<title>理想国</title>
+<title>怎么制作PPT的预览缩略图，一文搞定 | 理想国</title>
 <link rel="shortcut icon" href="https://limainong.github.io/favicon.ico?v=1586505954806">
 <link rel="stylesheet" href="https://limainong.github.io/styles/main.css">
 
@@ -25,6 +25,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
+    <meta name="description" content="怎么制作PPT的预览缩略图，一文搞定" />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -55,7 +57,7 @@
       <nav class="site-nav" id="site_nav">
         <ul id="nav_ul">
           
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
                 <a href="/">
                   <i class="fa fa-home"></i> 首页
@@ -132,8 +134,23 @@
       
       <div class="section-layout gemini ">
         <div class="section-layout-wrapper">
-          <div class="sidebar">
-    
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://limainong.github.io/images/avatar.png"/>
@@ -199,30 +216,104 @@
   </div>
 
 </div>
+          
+        
+      </div>
+    </div>
+  
 </div>
-          <div class="section-box gemini">
-            <section class="section  posts-expand slide-down-in">
-              
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <div class="article-box">
+    <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://limainong.github.io/post/hello-gridea/">
-      Gridea 搭建指南
+    <a class="post-title-link" href="https://limainong.github.io/post/zen-me-zhi-zuo-ppt-de-yu-lan-suo-lue-tu-yi-wen-gao-ding/">
+      怎么制作PPT的预览缩略图，一文搞定
     </a>
   </h1>
   <div class="post-meta">
     
-      <span class="meta-item">
-        <i class="fa fa-thumb-tack"></i>
-        <span>置顶</span>
-        <span class="post-meta-divider">|</span>
-      </span>
-    
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-02-28</span>
+      <span>2020-03-09</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -237,134 +328,76 @@
     </span>
   </div>
 </header>
-      <div class="post-body">
-        
-          
-            
-            
-              <p>
-              
-            
-              <p><strong>Gridea</strong> 是一个静态博客写作客户端。</p>
-
-              
-                <img src="https://limainong.github.io/post-images/hello-gridea.png" />
-              
-            
-              <p>你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
-
-              
-            
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://limainong.github.io/post/hello-gridea/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://limainong.github.io/post/markdown/">
-      Markdown 常用语法
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-      <span class="meta-item">
-        <i class="fa fa-thumb-tack"></i>
-        <span>置顶</span>
-        <span class="post-meta-divider">|</span>
-      </span>
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-02-28</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>7分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>1723<span class="pc-show">字数</span></span>
-    </span>
-  </div>
-</header>
-      <div class="post-body">
-        
-          
-            
-            
-              <p>
-              
-            
-              <p>Markdown作为一个简洁的语法，用来写文章是非常不错的。</p>
-
-              
-                <img src="https://limainong.github.io/post-images/markdown.jpg" />
-              
-            
-              <p>这里收集了Markdown的所有常用语法。</p>
-
-              
-            
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://limainong.github.io/post/markdown/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-  
-              
-              
-<div class="page bg-color">
-  <ul class="pagination-ul">
-    
-    
-      
-        <li class="pagination-li pagination-active">
-            <a href="/page/../">
-              1
-            </a>
-        </li>
-      
-        <li class="pagination-li ">
-            <a href="/page/2">
-              2
-            </a>
-        </li>
-      
-    
-    
-      <li class="pagination-dir">
-        <a href="/page/2">
-          <i class="fa fa-angle-right"></i>
-        </a>
-      </li>
-    
-  </ul>
 </div>
-            </section>
+              <div class="post-body next-md-body" id="post_body">
+                <p>PPT怎么制作缩略预览图？ppt中的素材很多时候，为了起到预览的效果，想要制作一个缩略图，该怎么制作呢？下面我们就来看看ppt缩略图的制作方法，需要的朋友可以参考下</p>
+<figure data-type="image" tabindex="1"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453329.jpg" alt="" loading="lazy"></figure>
+<p>1、首先，PPT的版本需要是2010版本或者更高版本，否则插件不支持。如果不想升级PPT的版本，那么2007版的PPT可以用**【Nordri Tools插件】**，这个插件是iSlide的前身，支持2007版本的PPT生成缩略图。我这里演示使用的是office 2016版本的PPT。推荐大家也升级到新版本，功能会更多，实现起来的功能也更快捷。</p>
+<p>2、PPT的版本满足要求之后，去下载一个islide插件，百度直接搜islide插件，就能看到官网。直接在官网下载一个。</p>
+<figure data-type="image" tabindex="2"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453390.jpg" alt="" loading="lazy"></figure>
+<p>3、下载完之后直接双击运行，按照提示一步步安装插件。安装完之后重启PPT软件。</p>
+<p>4、打开PPT软件之后我们就可以看到在菜单栏多了一个菜单**【islide】**</p>
+<figure data-type="image" tabindex="3"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453390.jpg" alt="" loading="lazy"></figure>
+<p>5、在菜单栏islide，点击【PPT拼图】，这时候会显示正在导出，如果PPT页数较多，会需要较长时间，耐心等候一下，即可看到已经生成了一个整个PPT的缩略图。如图。</p>
+<figure data-type="image" tabindex="4"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453446.jpg" alt="" loading="lazy"></figure>
+<p>6、在弹出的PPT拼图界面，可以导出的拼图的分辨率、横向数量、边框背景颜色等等参数，自己按实际需求设置即可。</p>
+<figure data-type="image" tabindex="5"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453446.jpg" alt="" loading="lazy"></figure>
+<p>7、后我们点击另存为，然后选择保存的位置，就可以导出整个PPT的缩略图了。</p>
+<figure data-type="image" tabindex="6"><img src="http://img.sc.chinaz.com/upload/2018/04/14//2018041407453446.jpg" alt="" loading="lazy"></figure>
+<p>以上就是ppt制作缩略图效果的教程</p>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      理想国
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://limainong.github.io/post/zen-me-zhi-zuo-ppt-de-yu-lan-suo-lue-tu-yi-wen-gao-ding/" title="怎么制作PPT的预览缩略图，一文搞定">怎么制作PPT的预览缩略图，一文搞定</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
+</div>
+              
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '6bf922d978b6262184e3',
+    clientSecret: '133457231d2908896e72d1516c1824b105b13071',
+    repo: 'limainong.github.io',
+    owner: 'limainong',
+    admin: ['limainong'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+</script>
+                
+                
+                
+              
+            </div>
           </div>
         </div>
       </div>
